@@ -1,0 +1,55 @@
+Spring:
+    Spring is a open source light weight java based framework.Using spring framework we can develope several typeof java application like standalone app,wed Application,
+Distributed Application.Spring is a non-Invasive,Versatile and it is developed in modular fashion.
+Beans:
+    @Bean annotation is method level annotation.If we want to create object for any class with our own implementation then we will use @Bean annotation.
+The method which is annotated with @Bean will be called by IOC.
+components:
+    @Component is a stereo type annotation which is used to represent java class is Spring Bean.This is a class level annotation.
+Spring IOC:
+    It is principle which is used to manage and collaborate Dependencies among the object in application.It is responsible to perform Dependency Injection.
+Dependecy Injection:
+    The process of injecting dependent bean object into target bean object is called Dependency Injection.
+Maven project:
+    Maven is a widely used build automation and project management tool in the Java software development ecosystem.
+It helps manage the entire lifecycle of a software project, including tasks such as building, testing, packaging, and managing dependencies. 
+Annotations:
+      an annotation is a form of metadata that provides additional information about elements in the code.
+Annotations in programming languages are used to add descriptive or structural information to the source code, and they are typically not involved in the program's execution.
+Spring mvc:
+      Spring MVC is one of the module available in spring framework.Using spring MVC we can develop Web Application and Distributed Application.
+Spring MVC architecture contain component:1)FrontController
+                                          2)HandlerMapper
+                                          3)Controller
+                                          4)ModelAndView
+                                          5)ViewResolver
+                                          6)View
+
+ORM:
+  OMR stands for Object Relational Mapping.When we working with Data Jpa we can few ORM properties like Show_sql=true,format_sql,ddl_auto=update/create/validate.
+
+Security:
+  Spring Security is a powerful and customizable authentication and access control framework for Java applications. 
+It is a part of the larger Spring framework and provides comprehensive security services for Java EE-based enterprise software applications. 
+Spring Security can be integrated with various authentication mechanisms, authorization strategies, and protection against common security vulnerabilities
+
+Spring AOP:
+     Aspect-Oriented Programming (AOP) is a programming paradigm that aims to increase modularity by allowing the separation of cross-cutting concerns. 
+Cross-cutting concerns are aspects of a program that affect multiple modules, and traditional object-oriented programming can lead to code duplication or tangling when addressing these concerns. 
+Spring AOP provides a way to modularize these concerns.
+
+CRUD operations:
+     Spring application, performing CRUD (Create, Read, Update, Delete) operations involves interacting with a data source, such as a database, and manipulating data. 
+Example:
+   public User updateUser(Long userId, User updatedUser) {
+        User existingUser = userRepository.findById(userId).orElse(null);
+        
+        if (existingUser != null) {
+            existingUser.setUsername(updatedUser.getUsername());
+            existingUser.setEmail(updatedUser.getEmail());
+            
+            return userRepository.save(existingUser);
+        }
+        return null;
+    }
+}
